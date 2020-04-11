@@ -18,6 +18,8 @@
   
 4- Lembrando que caso o parâmetro seja passado, o sistema usa a raiz do projeto como base, portanto se o arquivo de input estiver fora da raiz do projeto, deve-se indicar a saída como em: <strong>../../users/path/input.csv</strong>  
 
+5- O arquivo que lida com a interface de console se encontra em <stron>app/Console/Commands/ShortestPathCommand.php</strong>
+
 <h3>Interface Rest</h3>
 
 1 - Foram criadas duas rotas, uma GET para consulta de melhor rota entre dois pontos e uma POST que fará o registro de novas rotas. As rotas podem ser encontradas em <strong>routes/api.php</strong>:
@@ -33,7 +35,9 @@
 4- Ambos endpoints suportam os campos <strong>route</strong> e <strong>file</strong> que devem ser enviados no body da requisição, ou via query string.  
 
 - route: no endpoint GET, esse campo é obrigatório e representa a rota cujo melhor caminho deve ser encontrado, deve ser enviado seguindo o formato: <strong>GRU-CDG</strong>. Já no POST, será a rota e a distância a ser inserida no arquivo .csv de entrada, deve ser enviado no formato: <strong>GRU,CDG,20</strong>  
-- file: em ambos endpoints é um campo opcional e representa o diretório para o arquivo csv de entrada. Caso não seja informado, será usado o arquivo input default, encontrado em <strong>assets/input.csv</strong>. Lembrando que a mesma consideração (Interface de Console - 4) se aplica caso o arquivo esteja fora da raiz do projeto.
+- file: em ambos endpoints é um campo opcional e representa o diretório para o arquivo csv de entrada. Caso não seja informado, será usado o arquivo input default, encontrado em <strong>assets/input.csv</strong>. Lembrando que a mesma consideração (Interface de Console - 4) se aplica caso o arquivo esteja fora da raiz do projeto.  
+
+5- O controller que lida com esses endpoints se encontra em: <stron>app/Http/Controllers/ShortestPathController.php</strong>
 
 <h3>Testes de Unidade</h3>  
 
