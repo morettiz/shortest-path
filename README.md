@@ -35,4 +35,4 @@
 
 <h3>Testes de Unidade</h3>  
 
-1- Os testes unitários estão no diretório <strong>tests/Unit/</strong> e para rodá-los, execute o comando: <strong>./vendor/bin/phpunit</strong>  
+1- Foram criados alguns testes de unidade para garantir o bom funcionamento do código. Os testes podem ser encontrados em: <strong>tests/Unit/</strong> e para rodá-los, execute o comando: <strong>./vendor/bin/phpunit</strong>  
