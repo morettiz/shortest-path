@@ -1,6 +1,6 @@
 <strong>O problema da rota de viagem, que visa pagar o menor preço possível, é muito similar ao problema do caminho mais curto em um grafo dirigido ou não dirigido. Para solucionar esse problema, o algoritmo de Edsger Dijkstra (1956) serve como base nessa implementação.</strong>  
 
-<br>
+<hr />
 
 <h2>Instruções para executar a aplicação</h2>  
 
