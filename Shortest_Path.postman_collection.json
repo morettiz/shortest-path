@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "546c1b6e-5fbc-4165-a553-06a740ed7e37",
+		"name": "Shortest Path",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Shortest Path",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"route\": \"GRU-CDG\",\n\t\"file\": \"assets/input.csv\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/shortest-path",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"shortest-path"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Route",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"route\": \"CGR,CDG,150\",\n\t\"file\": \"assets/input.csv\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/shortest-path",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"shortest-path"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
